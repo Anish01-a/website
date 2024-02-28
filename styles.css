@@ -107,7 +107,7 @@ img{
 /*NAVIGATION BAR ENDING CSS */
 /*SECTION STARTING*/
 			section{
-				background: url(logo.png) no-repeat;
+				background: url(Logo.png) no-repeat;
 				background-size: cover;
 				height: calc(100vh);
 			}
