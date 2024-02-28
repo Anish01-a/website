@@ -69,11 +69,11 @@
               color: #fff;
          	}
          	nav ul li{
-						display: block;
-						float: none;
-						padding-left: 15px;
-						color: #fff;
-				  }
+				display: block;
+				float: none;
+				padding-left: 15px;
+				color: #fff;
+		  }
 		    #click:checked~ul{
 		    	left:0%;
 		    }
@@ -107,7 +107,7 @@ img{
 /*NAVIGATION BAR ENDING CSS */
 /*SECTION STARTING*/
 			section{
-				background: url(logo.png) no-repeat;
+				background: url(Logo.png) no-repeat;
 				background-size: cover;
 				height: calc(100vh);
 			}
