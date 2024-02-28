@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator | Anish Neupane</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/x-icon" href="C:\Users\dell\Desktop\Main Html\Logo.png">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+			*{
+				margin: 0;
+				padding: 0;
+				font-family: 'Roboto', sans-serif;
+				box-sizing: border-box;
+				list-style: none;
+			}
+
+			body{
+				background: #566D7E;
+			}
+
+			/*Calculator css start*/
+			.container{
+				width: 100%;
+				height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.calculator{
+				padding: 20px;
+				border-radius: 20px;
+				background: #369381;
+				border: 4px solid #359381;
+
+			}
+
+			.container form input{
+				outline: 0;
+				width: 60px;
+				height: 60px;
+				margin: 10px;
+				border-radius: 20px;
+				box-shadow: -4px -3px 20px rgba(255, 255, 255, 0.8), 5px 5px 15px rgba(113, 115, 117, 0.2);
+				background: #3a445e;
+				font-size: 20px;
+				cursor: pointer;
+				border: 0;
+				color: #fff;
+			}
+
+			.container form input:hover{
+				box-shadow: inset 5px 5px 3px grey, inset -5px -5px 3px #696969;
+			}
+			.container form input:focus{
+				border: 3px solid white;
+			}
+			form #display{
+				width: 312px;
+				display: flex;
+				height: 100px;
+				align-items: flex-end;
+				font-size: 30px;
+				box-shadow: none;
+				color: #fff;
+				text-align: right;
+				background: ;
+			}
+
+			.container form .operator{
+				color: #08e8de;
+			}
+			/*CALCULATOR CSS END*/
+			/*LOGO*/
+			img{
+				height: 70px;
+				width: 100px;
+				position: absolute;
+				top: 30px;
+				left: 100px;
+			}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<a href="index.html"><img src="C:\Users\dell\Desktop\Main Html\Logo.png"></a>
+		<div class="calculator">
+			<form>
+				<div>
+					<input type="text" name="display" id="display">
+				</div>
+				<div class="row">
+					<input type="button" value="AC" onclick="display.value = '' " class="operator">
+					<input type="button" value="DEL" onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
+					<input type="button" value="%" onclick="display.value += '.' " class="operator">
+					<input type="button" value="/" onclick="display.value += '/' " class="operator"> 
+				</div>
+				<div>
+					<input type="button" value="7" onclick="display.value += '7' ">
+					<input type="button" value="8" onclick="display.value += '8' ">
+					<input type="button" value="9" onclick="display.value += '9' ">
+					<input type="button" value="*" onclick="display.value += '*' " class="operator">
+				</div>	
+				<div> 
+					<input type="button" value="4" onclick="display.value += '4' ">
+					<input type="button" value="5" onclick="display.value += '5' ">
+					<input type="button" value="6" onclick="display.value += '6' ">
+					<input type="button" value="-" onclick="display.value += '-' " class="operator">
+				</div>	
+				<div>
+					<input type="button" value="1" onclick="display.value += '1' ">
+					<input type="button" value="2" onclick="display.value += '2' ">
+					<input type="button" value="3" onclick="display.value += '3' ">
+					<input type="button" value="+" onclick="display.value += '+' " class="operator">
+				</div>
+				<div>
+					<input type="button" value="00" onclick="display.value += '00' ">
+					<input type="button" value="0" onclick="display.value += '0' ">
+					<input type="button" value="=" onclick="display.value = eval(display.value) " class="operator" style="width:145px;">
+				</div>	
+			</form>		
+		</div>
+	</div>
+</body>
+</html>

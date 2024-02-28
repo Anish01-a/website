@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.container{
+			width: 50%;
+			margin: auto;
+			border: 1px dashed grey;
+			height: 170px;
+		}
+		.paragraph{
+			margin: 10px;
+			font-size: 18px;
+			color: blue;
+		}
+		#cel,#fah{
+			width: 50px;
+			margin: 10px;
+		}
+		button{
+			height: 25px;
+		}
+	</style>
+</head>
+<body>
+	<h3 style="text-align: center;">Celcius to Fahrenheit Converter</h3>
+	<div class="container">
+		<p class="paragraph">Enter value in Celcius</p>
+		<form>
+			<input type="number" id="cel">
+			<button type="button" onclick="tofah()">Submit</button>
+			<p class="paragraph">The value in Fahrenheit</p>
+			<p id="fah"></p>
+		</form>
+	</div>
+	<script type="text/javascript">
+		function tofah() {
+			var data = document.getElementById('cel').value;
+			var c = Number(data);
+			var f=c*1.8+32;
+			document.getElementById('fah').innerHTML = f;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Validation | Anish Neupane</title>
+	<link rel="stylesheet" type="text/css" href="validation.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="icon" type="image/x-icon" href="Logo.png">
+</head>
+<body>
+	
+	<div class="container">
+		<img src="Logo.png">
+		<i class="fa fa-paper-plane-o"></i>
+		<form name="signup" method="POST" onsubmit="return formValidate()">
+
+			<h1>Let's SignUp</h1>
+
+			<div class="input-group">
+				<label for="fname"> Full Name :</label>
+				<input id="name" type="text" name="fname" placeholder="Enter Full Name"   onkeyup="nameValidation()" autocomplete="off"><br>
+				<span class="fa" id="nameError"></span>
+			</div>
+
+			<div class="input-group">
+				<label for="email">Email Address :</label>
+				<input id="email" type="email" name="email" placeholder="me@gmail.com"  onkeyup="emailValidation()" autocomplete="off"><br>
+				<span class="fa" id="emailError"></span>
+			</div>
+
+			<div class="input-group">
+				<label for="conEmail">Confirm Email :</label>
+				<input type="email" name="conEmail" placeholder="me@gmail.com"  onkeyup="emailCheck()" autocomplete="off"><br>
+				<span class="fa" id="emailConfirm"></span>	
+			</div>
+			
+			<div class="input-group">
+				<label for="phone">Phone Number :</label>
+				<input type="text" name="phone" placeholder="1234567890"  onkeyup="phoneValidation()" autocomplete="off"><br>
+				<span class="fa" id="phoneError"></span>
+			</div>
+			
+			<button>SUBMIT</button>
+			<p class="submitError"></p>
+		</form>
+
+	</div>
+	<script src="validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Parallax Scrolling Website | Anish Neupane</title>
+	<link rel="icon" type="image/x-icon" href="C:\Users\dell\Desktop\Main Html\Logo.png">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		    font-family: 'Poppins', sans-serif;
+		}
+		body{
+				background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(205, 205, 205, 1) 25%, rgba(0, 6, 113, 1) 100%);
+				height: calc(86.5vh);
+		}
+		section{
+				margin-top: 100px;
+		}
+		header{
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    padding: 30px 100px;
+			    display: flex;
+			    align-items: center;
+			    justify-content: flex-start;
+			    z-index: 100;
+		}
+		.logo{
+			height: 60px;
+			padding-right: 270px;
+		}
+
+			.navigation a,
+			header a
+			{
+			    text-decoration: none;
+			    color: #359381;
+			    padding: 6px 15px;
+			    border-radius: 20px;
+			    font-weight: 600;
+			    margin: 0 10px;
+		}
+
+			.navigation a:hover, 
+			.navigation a.active{
+			    background: #359381;
+			    color: #fff;
+		}
+
+		p{
+			color: #111;
+			font-size: 20px;
+			padding-left: 70px;
+			text-shadow: 10px 0px 10px #358391;
+		}
+		h1{
+			color: #333;
+			font-size: 30px;
+			margin-left: 33%;
+		}
+		#text{
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="C:\Users\dell\Desktop\Main Html\Logo.png"class="logo"></a>
+        <nav class="navigation">
+            <a href="C:\Users\dell\Desktop\Main Html\parallax website\index.html" >Home</a>
+            <a href="#" class="active">About</a>
+            <a href="tutorial.html">Tutorial</a>
+        </nav>
+    </header>
+    
+    <section>
+    	<h1 id="text">About Parallax Scrolling Website </h1><br><br>
+    	<p>
+    		Scrolling parallax is a popular technique in web design that involves the movement of background elements at different speeds compared to foreground elements as the user scrolls down a webpage. This creates an illusion of depth and adds a dynamic and visually engaging aspect to the website. The effect relies on the relative motion of multiple layers, giving a sense of three-dimensional space.<br>
+
+		In a typical scrolling parallax scenario:<br><br>
+
+		1) Background and Foreground Elements: The webpage is divided into layers, with the background and foreground being separate elements.<br><br>
+
+		2) Differential Movement: As the user scrolls, the background elements move at a different speed than the foreground elements. Usually, the background moves more slowly, creating a parallax effect.<br><br>
+
+		3) Depth Perception: The differential movement of layers gives the impression of depth, enhancing the overall visual experience and making the website more interactive and immersive.<br><br>
+
+		4) Engagement: Scrolling parallax is often used to draw attention to specific content, create a storytelling element, or simply add a visually appealing touch to the design.<br><br>
+
+		Common elements used in scrolling parallax include images, illustrations, or other graphical elements. This technique has been widely adopted in modern web design to make websites more dynamic, responsive, and memorable.<br><br>
+	</p>
+
+</section>
+</body>
+</html>

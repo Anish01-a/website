@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PopUp | Anish Neupane</title>
+	<link rel="stylesheet" type="text/css" href="popup.css">
+	<link rel="icon" type="image/x-icon" href="Logo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		img{
+			transform: translate(-400px,-80px);
+		}
+		*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #333;
+}
+.btn{
+	margin-top: 20%;
+	transform: translateX(-40%);
+	border-radius: 20px;
+	background: #358391;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 24px;
+	outline: 0;
+	border: 0;
+}
+.btn:hover{
+	box-shadow: 0 0 0 10px inset grey;
+	transform: scale(1,1);
+	transition: transform 2s;
+}
+.popup{
+	width: 400px;
+	background: #fff;
+	border-radius: 8px;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%,-50%) scale(0.1);
+	text-align: center;
+	color: #333;
+	padding: 0 30px 30px;
+	transition: transform 0.4s, top 0.4s;
+	visibility: hidden;
+}
+.openPopup{
+	top: 50%;
+	visibility: visible;
+	transform: translate(-50%,-50%) scale(1);
+}
+.popup h2{
+	font-size: 34px;
+	font-weight: 500;
+	margin: 30px 0 10px;
+	color:  #6fd749;
+}
+.popup button{
+	width: 100px;
+	margin-top: 50px;
+	padding: 10px 0;
+	background: #6fd649;
+	color: #fff;
+	border: 0;
+	outline: 0;
+	font-size: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup .fa-check{
+	transform: translate(0px, -24px);
+	color: white;
+	background: green;
+	border-radius: 50%;
+	padding: 12px;
+}
+.popup .fa-window-close{
+	background: green;
+	padding: 10px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+}
+.popup p{
+	font-size: 18px;
+}
+
+	</style>
+</head>
+<body>
+	<a href="index.html"><img src="Logo.png" height="70px" width="100px"></a>
+
+	<button class="btn" type="submit" onclick="openpopup()">Continue</button>
+		<div class="popup" id="popup">
+			<i class="fa fa-check"></i>
+			<h2>Thank You!</h2>
+			<p>Your details has been successfully submitted.</p>
+			<i class="fa fa-window-close" onclick="closepopup()"></i>
+		</div>
+	<script type="text/javascript" >
+		var popup = document.getElementById('popup');
+
+		function openpopup() {
+			popup.classList.add('openPopup');
+		}
+
+		function closepopup() {
+			popup.classList.toggle('openPopup');
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Water in text | Anish Neupane</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/x-icon" href="C:\Users\dell\Desktop\Main Html\Logo.png">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins, sans-serif;';
+		}
+		body{
+			background: #141218;
+			min-height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.content{
+			bottom: 65px;
+			left: 70px;
+			position: relative;
+		}
+		.content h2{
+			position: absolute;
+			font-size: 100px;
+		}
+		.content h2:nth-child(1) {
+			background: transparent;
+			color: #fff;
+		} 
+		.content h2:nth-child(2) {
+			color: #03a8f4;
+			animation: animate 5s ease-in-out infinite;
+		}
+		p{
+			color: #fff;
+			font-size: 25px;
+			margin-top: 40%;
+		}
+		.logo{
+			height: 100px;
+			position: absolute;
+			left: 40px;
+			top: 40px;
+		}
+@keyframes animate{
+	0%, 100%{
+		clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+	}
+	50%{
+		clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+	}
+
+}	
+	</style>
+</head>
+<body>
+		<img src="C:\Users\dell\Desktop\Main Html\Logo.png" class="logo">
+	<div class="content">
+		<h2>Water</h2>
+		<h2>Water</h2>
+	</div>
+		<p>Copyright : &copy; 2024<br> Designed by Mr. Anish.</p>
+</body>
+</html>

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap');
+       *{
+       	margin: 0px;
+       	list-style: none;
+       	color: #fff;
+       	font-family: 'Poppins', sans-serif;
+       	list-style: none;
+       	text-decoration: none;
+       }
+/* NAVIGATION BAR CSS STARTING */
+		nav{
+
+			height: 60px;
+			background: rgb(0,36,88);
+			background: linear-gradient(90deg, rgba(0,36,88,1) 0%, rgba(2,70,142,1) 9%, rgba(0,86,154,1) 20%, rgba(13,184,184,1) 48%, rgba(0,224,219,1) 82%, rgba(0,214,207,1) 100%);
+		}
+		label{
+			margin: 0px 25px;
+			line-height: 50px;
+			font-size: 25px;
+			color: #fff;
+		}
+		nav ul{			
+			float: right;
+		}
+		nav ul li{
+			float: left;
+			line-height: 60px;			
+			margin: 0 20px;
+			padding: 0px;
+		}
+		nav ul li a{
+			text-decoration: none;
+			color: #fff;
+			font-size: 20px;
+		}
+		nav ul li a i{
+			padding: 10px;
+			color: #fff;
+			font-size: 20px;
+		}
+         #click{
+           display: none;
+         }
+         .checked{
+         	float: right;
+         	line-height: 60px;
+         	padding: 0px;
+         	display: none;
+         }
+        nav li.active,nav li:hover{
+         	border-bottom: 3px solid red;
+         	transition: 0.1s ease;
+         }
+ @media(max-width:800px){
+         	.checked{
+         		display: inline-block;
+         	}
+         	nav ul{
+         	  background: #202123;
+              position: fixed;
+              padding: 0px;
+              margin: 0px;
+              float:left;
+              top: 60px;
+              left:-110%;
+              width: 100%;
+              z-index: 999;
+              color: #fff;
+         	}
+         	nav ul li{
+						display: block;
+						float: none;
+						padding-left: 15px;
+						color: #fff;
+				  }
+		    #click:checked~ul{
+		    	left:0%;
+		    }
+		    nav ul li{
+		    	padding: 10px 10px;
+		    }
+		    li.active,li:hover{
+         	background: transparent;
+         	color: #fff;
+         	border-bottom: 3px solid #fff;
+         	transition: 1s ease-out;
+         	width: 25%;
+            }
+            h2{
+             font-size: 25px;  
+            }
+        .webpage li{
+				background:none;       	
+				font-size: 15px;
+        }
+        .webpage li:hover{
+        	background: none;
+        }
+        }
+img{
+	cursor: pointer;
+	height: 60px;
+	width: 100px;
+	text-align: center;
+}
+/*NAVIGATION BAR ENDING CSS */
+/*SECTION STARTING*/
+			section{
+				background: url(logo.png) no-repeat;
+				background-size: cover;
+				height: calc(100vh);
+			}
+/*SECTION ENDING*/
+/*FOOTER CONTAINER CSS STARTING*/
+ .footer_container{	
+         	background: #24272e;
+         	display: flex;
+         	align-items: center;
+         	justify-content: space-around;
+         }
+         .footer_items{
+         	column-gap: 20px;
+         	width: 200px;
+         }
+         .grow1{
+         	flex-grow: 2;
+         }
+         .grow2{
+         	align-items: center;
+         	flex-grow: 1;
+         }
+         .footer_items h5{
+         	background: none;
+         	margin: 20px;
+         }
+         #footer-p{
+         	color:#fff;
+         	font-size: 20px;
+         	margin-left: 30px;
+         }
+         .footer_items p i{
+          color: #fff;
+          font-size: 20px;
+          margin: 10px;
+         }
+         #footer-logos .fa{
+         	padding: 10px;
+         	color: #fff;
+         }
+          #footer-logos .fa:hover{
+          background: #fff;
+          border-radius: 6px;
+         	color: #000;
+         	cursor: pointer;
+         	transition: background 0.5s ease;
+         }
+         #threads{
+         	position: absolute;
+         	color: #fff;
+         	font-size: 20px;
+         	margin: 10px;
+         	padding: 10px;
+         	background: transparent;
+         	width: 20px;
+         	height: 20px;
+         }
+         #threads:hover{
+         	background: #fff;
+         	cursor: pointer;
+         	border-radius: 6px;
+         	transition: background 0.5s ease;
+         }
+         .webpage li{
+         	font-size: 20px;
+         	color: #fff;
+         	cursor: pointer;
+         	position: relative;
+         	padding-bottom: 0.25rem;
+         }
+         .webpage li::before{
+         	content: "";
+         	position: absolute;
+         	left: 0;
+         	bottom: 0;
+         	width: 20%;
+         	height: 2px;
+         	transition: width 0.5s ease-out;
+         }
+         .webpage li:hover::before{
+         	width: 70%;
+         	left: 0;
+         	right: auto;
+         	background-color: rgb(0, 255, 0);
+         }
+        .webpage li::after{
+        	width: 20%;
+        	transition: width 0.3s ease;
+        	content: '';
+
+        }
+        .webpage li:hover{
+        	border-bottom: none;
+        }
+	     	h5{
+	     		padding-left: 30px;
+	     		font-family: 'Poppins', sans-serif;
+	     		font-size: 23px;
+	     	}
+/*FOOTER CONTAINER CSS ENDING*/

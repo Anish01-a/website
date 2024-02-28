@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Parallax Website Tutorial | Anish Neupane</title>
+	<link rel="icon" type="image/x-icon" href="C:\Users\dell\Desktop\Main Html\Logo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+		}
+		body{			
+				background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(205, 205, 205, 1) 25%, rgba(0, 6, 113, 1) 100%);
+				height: calc(86.5vh);
+		}
+		video{
+			height: calc(75vh);
+			margin-left: 300px;
+			margin-top: 100px;
+		}
+			header{
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    padding: 30px 100px;
+			    display: flex;
+			    align-items: center;
+			    justify-content: flex-start;
+			    z-index: 100;
+		}
+		.logo{
+			height: 60px;
+			padding-right: 270px;
+		}
+
+			.navigation a,
+			header a
+			{
+			    text-decoration: none;
+			    color: #359381;
+			    padding: 6px 15px;
+			    border-radius: 20px;
+			    font-weight: 600;
+			    margin: 0 10px;
+		}
+
+			.navigation a:hover, 
+			.navigation a.active{
+			    background: #359381;
+			    color: #fff;
+		}
+
+		p{
+			font-size: 20px;
+			padding-left: 290px;
+		}
+	</style>
+</head>
+<body>
+   <header>
+     <a href="index.html"><img src="C:\Users\dell\Desktop\Main Html\Logo.png" class="logo"></a>
+        <nav class="navigation">
+            <a href="C:\Users\dell\Desktop\Main Html\parallax website\index.html" >Home</a>
+            <a href="C:\Users\dell\Desktop\Main Html\parallax website\about.html" >About</a>
+            <a href="#" class="active">Tutorial</a>
+        </nav>
+    </header>
+    
+	<video controls>
+		<source src="parallax-tutorial.mp4" type="video/mp4">
+	</video>
+
+	<p>Credits : The tutorial video's credit goes to Codehal. <a href="https://www.youtube.com/watch?v=kmM6mqvnxcs" style="text-decoration: none;">Link of youtube video. </a></p>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Celcius to Fahreinhiet Converter | Anish Neupane</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?">
+	<link rel="icon" type="image/x-icon" href="logo.png">
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Poppins', sans-serif;
+		color: #000;
+	}		
+	body{
+		background: #101118;
+	}
+	.container{
+		border: 2px solid #fff;
+		background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(205, 205, 205, 1) 25%, rgba(0, 6, 113, 1) 100%);
+		width: 50%;
+		height: 250px;
+		margin: auto;
+		margin-top: 50px;
+		border-radius: 20px;
+	}
+	p{
+		padding-left: 25px;
+		margin: 10px;
+		font-size: 25px;
+	}
+	input{
+		margin-left: 40px;
+		height: 40px;
+		width: 60%;
+		font-size: 25px;
+	}
+	button{
+		z-index: 999;
+		margin-top: 20px;
+		border-radius: 10px;
+		font-size: 20px;
+		padding: 10px;
+		color: #;
+		background: #358291;
+		margin-left: 40px;
+		cursor: pointer;
+		border: white;
+	}
+	button:hover{
+		color: #fff;
+		box-shadow: inset 5px 5px 3px white, inset -5px -5px 3px #696969;
+	}
+	h1{
+		margin: 40px;
+		color: #fff;
+		text-align: center;
+		font-family: Comic Sans MS;
+	}
+	#result{
+		color: #00ffff;
+	}
+	</style>
+</head>
+<body>
+	<h1>Celsius to Fahrenheit Calculator</h1>
+	<div class="container">
+		<p id="celcius">Enter temperature in Celsius : </p>
+		<input type="number" id="cel"><br>
+		<button type="button" onclick="conve()">Convert</button>
+		<p id="fahrenhiet">The temperature in Fahrenheit is :</p>
+		<p id="result" >Result : </p>
+	</div>
+	<script type="text/javascript">
+		function conve() {
+			var temp = document.getElementById('cel').value;
+			var c = Number(temp);
+			var f = c * 1.8 + 32;
+			document.getElementById('result').innerHTML = "Result : " + f;
+		}
+	</script>
+</body>
+</html>
