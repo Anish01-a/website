@@ -9,22 +9,31 @@
 	<title>Anish Neupane</title>
 </head>
 <body>
-	<nav>
+	<nav class="navigation">
 		<input type="checkbox" id="click">
 		<label for="click" class="checked">
 			<i class="fa fa-bars"></i>
 		</label>
 		<label class="logo"><img src="Logo.png" title="Logo"></label>
         <ul>
-        	<li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
-        	<li><a href="#">About</a></li>
+        	<li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+        	<li><a href="#about">About</a></li>
         	<li><a href="#">More</a></li>
         </ul>
 	</nav>
- 
-	<section>
-		
+
+	<section id="home">
+		<div id="me">
+			<h1><span>Hello!</span><br>It me <span>Anish Neupane.</span></h1>
+			<p>A begineer level<br><span>Front-end web developer</span><br> from Nepal. </p>
+		</div>	
+		<img src="me2.jpg" id="homeImage">
 	</section>
+
+	<div class="about" id="about">
+		<h1>About Me</h1>
+	</div>
+	<i	class="fa fa-arrow-up"></i>
 <!-- FOOTER CONTAINER STARTING -->
  <div class="footer_container">
   	 <div class="footer_items grow1">
@@ -34,7 +43,6 @@
   	 		<a href="https://www.instagram.com/anish.neupane0/"><i class="fa fa-instagram" style="margin-left:30px;"></i></a>
 	  	 	<a href="https://www.facebook.com/profile.php?id=100076265739840"><i class="fa fa-facebook"></i></a>
 	  	 	<a href="https://twitter.com/AnishNeupane010"><i class="fa fa-twitter"></i></a>
-	  	 	<a href="https://www.threads.net/@anish.neupane0"><img src="threads.png" id="threads"></a>
   	 	</p>
   	 </div>
   	 <div class="footer_items grow2">
@@ -52,5 +60,12 @@
 
   </div>
 <!--FOOTER CONTAINER ENDING -->
+<script>
+	window.addEventListener("scroll", function(){
+		var nav = document.querySelector('nav');
+		nav.classList.toggle("sticky", window.scrollY > 5);
+	})
+</script>
+
 </body>
 </html>

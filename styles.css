@@ -6,37 +6,67 @@
        	font-family: 'Poppins', sans-serif;
        	list-style: none;
        	text-decoration: none;
+		overflow-x: hidden;
+		box-sizing: border-box;
        }
-/* NAVIGATION BAR CSS STARTING */
-		nav{
 
-			height: 60px;
-			background: rgb(0,36,88);
-			background: linear-gradient(90deg, rgba(0,36,88,1) 0%, rgba(2,70,142,1) 9%, rgba(0,86,154,1) 20%, rgba(13,184,184,1) 48%, rgba(0,224,219,1) 82%, rgba(0,214,207,1) 100%);
+	   body{
+		background: #359381;
+		scroll-behavior: smooth;
+	   }
+	   body::-webkit-scrollbar{
+		display: none;
+	   }
+	   hr{
+		height: 5px;
+		background-color: #fff;
+		border: 0;
+		outline: 0;
+	   }
+/* NAVIGATION BAR CSS */
+		nav{
+			height: 80px;
+			background-color: #fff;
+			width: 90%;
+			margin: auto;
+			border-radius: 15px;
+			margin-top: 10px;
+			padding: 10px;
+			transition: 200ms;
+		}
+		.sticky{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			margin-top: 0px;
+			z-index: 998;
+		}
+		label::-webkit-scrollbar, nav::-webkit-scrollbar{
+			display: none;
 		}
 		label{
-			margin: 0px 25px;
+			margin: 0px 50px;
 			line-height: 50px;
 			font-size: 25px;
-			color: #fff;
 		}
-		nav ul{			
+		nav ul{
 			float: right;
 		}
 		nav ul li{
 			float: left;
 			line-height: 60px;			
-			margin: 0 20px;
+			margin: 0 10px;
 			padding: 0px;
 		}
 		nav ul li a{
 			text-decoration: none;
-			color: #fff;
+			color: #000;
 			font-size: 20px;
+			padding: 10px;
 		}
 		nav ul li a i{
-			padding: 10px;
-			color: #fff;
+			color: #000;
 			font-size: 20px;
 		}
          #click{
@@ -46,15 +76,32 @@
          	float: right;
          	line-height: 60px;
          	padding: 0px;
-         	display: none;
+         	visibility: hidden;
+			color: #000;
          }
-        nav li.active,nav li:hover{
-         	border-bottom: 3px solid red;
-         	transition: 0.1s ease;
+        nav li a.active, nav li a:hover{
+			background-color: #359381;
+			border-radius: 20px;
+			transition: 0.5s ease;
          }
- @media(max-width:800px){
+
+		.fa-arrow-up{
+			height: 50px;
+			width: 50px;
+			border-radius: 40%;
+			color: #000;
+			background: #fff;
+			position: fixed;
+			bottom:35px;
+			right: 35px;
+			font-size: 24px;
+			padding: 12px;
+		}
+ @media(max-width:700px){
          	.checked{
-         		display: inline-block;
+				color: hsl(133, 85%, 41%);
+				cursor: pointer;
+				visibility: visible;
          	}
          	nav ul{
          	  background: #202123;
@@ -69,10 +116,12 @@
               color: #fff;
          	}
          	nav ul li{
-				display: block;
+				display: inline;
 				float: none;
-				padding-left: 15px;
-				color: #fff;
+				margin-left: 60px;
+		  }
+		  nav ul li a{
+			color: #fff;
 		  }
 		    #click:checked~ul{
 		    	left:0%;
@@ -104,15 +153,61 @@ img{
 	width: 100px;
 	text-align: center;
 }
-/*NAVIGATION BAR ENDING CSS */
-/*SECTION STARTING*/
+
+/*SECTION CSS*/
 			section{
-				background: url(Logo.png) no-repeat;
-				background-size: cover;
+				background: #202123;
 				height: calc(100vh);
+				margin: 10px;
+				border-radius: 10px;
+				padding: 50px;
+				font-size: 40px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				text-align: center;
 			}
-/*SECTION ENDING*/
-/*FOOTER CONTAINER CSS STARTING*/
+
+			section h1 span{
+				color: #27ae60;
+			}
+
+			section p span{
+				color: #27ae60;
+			}
+
+			#homeImage{
+				height: 50vh;
+				width: 320px;
+				border-radius: 90%;
+			}
+
+/* ABOUT CSS */
+	.about{
+		height: 100vh;
+		background-color: #191d2b;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		margin: 10px;
+		border-radius: 15px;
+	}
+
+	.about h1{
+		width: 100%;
+		position: absolute;
+		top: 20px;
+		transform: translateX(47%);
+		font-size: 40px;
+		color: #27ae60;
+	}
+
+	.about h1 span{
+		color: #27ae60;
+	}
+
+/*FOOTER CONTAINER CSS */
  .footer_container{	
          	background: #24272e;
          	display: flex;
@@ -155,28 +250,13 @@ img{
          	cursor: pointer;
          	transition: background 0.5s ease;
          }
-         #threads{
-         	position: absolute;
-         	color: #fff;
-         	font-size: 20px;
-         	margin: 10px;
-         	padding: 10px;
-         	background: transparent;
-         	width: 20px;
-         	height: 20px;
-         }
-         #threads:hover{
-         	background: #fff;
-         	cursor: pointer;
-         	border-radius: 6px;
-         	transition: background 0.5s ease;
-         }
          .webpage li{
          	font-size: 20px;
+			width: 60%;
          	color: #fff;
          	cursor: pointer;
          	position: relative;
-         	padding-bottom: 0.25rem;
+         	padding-bottom: 10px;
          }
          .webpage li::before{
          	content: "";
@@ -188,7 +268,7 @@ img{
          	transition: width 0.5s ease-out;
          }
          .webpage li:hover::before{
-         	width: 70%;
+         	width: 80%;
          	left: 0;
          	right: auto;
          	background-color: rgb(0, 255, 0);
@@ -207,4 +287,4 @@ img{
 	     		font-family: 'Poppins', sans-serif;
 	     		font-size: 23px;
 	     	}
-/*FOOTER CONTAINER CSS ENDING*/
+
