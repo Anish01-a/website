@@ -17,22 +17,17 @@
 	   body::-webkit-scrollbar{
 		display: none;
 	   }
-	   hr{
-		height: 5px;
-		background-color: #fff;
-		border: 0;
-		outline: 0;
-	   }
+
 /* NAVIGATION BAR CSS */
 		nav{
-			height: 80px;
+			height: 60px;
 			background-color: #fff;
 			width: 90%;
 			margin: auto;
 			border-radius: 15px;
 			margin-top: 10px;
-			padding: 10px;
 			transition: 200ms;
+			transform: scale(1,1);
 		}
 		.sticky{
 			position: fixed;
@@ -41,6 +36,15 @@
 			width: 100%;
 			margin-top: 0px;
 			z-index: 998;
+			background-color: #000;
+			color: #fff;
+			border-radius: 0px;
+		}
+		.sticky ul li a {
+			color: #fff;
+		}
+		.sticky ul li a i{
+			color: #fff;
 		}
 		label::-webkit-scrollbar, nav::-webkit-scrollbar{
 			display: none;
@@ -83,12 +87,12 @@
 			background-color: #359381;
 			border-radius: 20px;
 			transition: 0.5s ease;
-         }
-
-		.fa-arrow-up{
+		}
+/* GO TO TOP BUTTON  */
+		#btn{
 			height: 50px;
 			width: 50px;
-			border-radius: 40%;
+			border-radius: 60%;
 			color: #000;
 			background: #fff;
 			position: fixed;
@@ -96,10 +100,18 @@
 			right: 35px;
 			font-size: 24px;
 			padding: 12px;
+			text-align: center;
+			cursor: pointer;
 		}
+		#btn:hover{
+			background-color: #258391;
+			color: #fff;
+		}
+
+/* RESPONSIVE CSS */
  @media(max-width:700px){
          	.checked{
-				color: hsl(133, 85%, 41%);
+				color: #000;
 				cursor: pointer;
 				visibility: visible;
          	}
@@ -110,13 +122,14 @@
               margin: 0px;
               float:left;
               top: 60px;
+			  height: 100px;
               left:-110%;
               width: 100%;
               z-index: 999;
               color: #fff;
          	}
          	nav ul li{
-				display: inline;
+				display: block;
 				float: none;
 				margin-left: 60px;
 		  }
@@ -132,7 +145,6 @@
 		    li.active,li:hover{
          	background: transparent;
          	color: #fff;
-         	border-bottom: 3px solid #fff;
          	transition: 1s ease-out;
          	width: 25%;
             }
@@ -186,9 +198,6 @@ img{
 	.about{
 		height: 100vh;
 		background-color: #191d2b;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
 		position: relative;
 		margin: 10px;
 		border-radius: 15px;
@@ -196,15 +205,21 @@ img{
 
 	.about h1{
 		width: 100%;
-		position: absolute;
-		top: 20px;
-		transform: translateX(47%);
+		text-align: center;
+		margin-top: 20px;
 		font-size: 40px;
 		color: #27ae60;
 	}
 
 	.about h1 span{
 		color: #27ae60;
+	}
+
+	.about p{
+		margin-left: 10px;
+		padding: 20px;
+		font-size: 28px;
+		color: #007054;
 	}
 
 /*FOOTER CONTAINER CSS */
