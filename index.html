@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="icon" type="image/x-icon" href="Logo.png">
 	<title>Anish Neupane</title>
@@ -34,7 +35,7 @@
 		<h1>About Me</h1>
 			<p>I am Anish Neupane. I am a begineer level front end web developer.<br>I am currently studying  at Grade-9 in Computer Engineering Sector.</p>
 	</div>
-	<i	class="fa fa-arrow-up" id="btn"></i>
+	<a href="#" class="btn"><i class="fa fa-arrow-up"></i></a>
 <!-- FOOTER CONTAINER STARTING -->
  <div class="footer_container">
   	 <div class="footer_items grow1">
@@ -62,11 +63,20 @@
   </div>
 <!--FOOTER CONTAINER ENDING -->
 <script>
-	window.addEventListener("scroll", function(){
-		var nav = document.querySelector('nav');
-		nav.classList.toggle("sticky", window.scrollY > 5);
-	})
+	const toTop = document.querySelector(".btn");
 
+	window.addEventListener("scroll", () => {
+		if(window.pageYOffset > 100) {
+			toTop.classList.add('top');
+		}else{
+			toTop.classList.remove('top');
+		}
+	});
+	
+    window.addEventListener("scroll", function() {
+        var nav = document.querySelector('nav');
+        nav.classList.toggle("sticky", window.scrollY > 5);
+    });
 </script>
 
 </body>
