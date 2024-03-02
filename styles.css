@@ -2,7 +2,6 @@
        *{
        	margin: 0px;
        	list-style: none;
-       	color: #fff;
        	font-family: 'Poppins', sans-serif;
        	list-style: none;
        	text-decoration: none;
@@ -21,8 +20,9 @@
 /* NAVIGATION BAR CSS */
 		nav{
 			height: 70px;
-			background-color: #fff;
+			background-color: #344955;
 			width: 90%;
+			color: #fff;
 			margin: auto;
 			border-radius: 15px;
 			margin-top: 10px;
@@ -38,15 +38,12 @@
 			width: 100%;
 			margin-top: 0px;
 			z-index: 998;
-			background-color: #000;
-			color: #fff;
+			background-color: #fff;
+			color: #000;
 			border-radius: 0px;
 		}
-		.sticky ul li a {
-			color: #fff;
-		}
-		.sticky ul li a i{
-			color: #fff;
+		.sticky ul li a , .sticky ul li a i{
+			color: #000;
 		}
 		label::-webkit-scrollbar, nav::-webkit-scrollbar{
 			display: none;
@@ -67,14 +64,17 @@
 		}
 		nav ul li a{
 			text-decoration: none;
-			color: #000;
+			color: #fff;
 			font-size: 20px;
 			padding: 10px;
 		}
-		nav ul li a i{
-			color: #000;
-			font-size: 22px;
-		}
+		.fa-home{
+			color: #fff;
+			font-size: 24px;
+			line-height: 38px;
+			margin: 10px 10px 0px 10px;
+
+		}	
          #click{
            display: none;
          }
@@ -83,13 +83,13 @@
          	line-height: 60px;
          	padding: 0px;
          	visibility: hidden;
-			color: #000;
+			color: #fff;
          }
-        nav li a.active, nav li a:hover{
+		nav ul li:hover{
 			background-color: #359381;
 			border-radius: 20px;
 			transition: 0.5s ease;
-		}
+		 }
 /* GO TO TOP BUTTON  */
 		.btn{
 			background-color: #fff;
@@ -184,16 +184,14 @@ img{
 				justify-content: space-between;
 				align-items: center;
 				text-align: center;
+				flex-basis: 60%;
 			}
-
-			section h1 span{
+			section h1, p{
+				color: #E2DFD2;
+			}
+			section h1 span, p span{
 				color: #27ae60;
 			}
-
-			section p span{
-				color: #27ae60;
-			}
-
 			#homeImage{
 				height: 50vh;
 				width: 320px;
@@ -230,7 +228,7 @@ img{
 	}
 
 /*FOOTER CONTAINER CSS */
- .footer_container{	
+		 .footer_container{	
          	background: #24272e;
          	display: flex;
          	align-items: center;
@@ -250,6 +248,7 @@ img{
          .footer_items h5{
          	background: none;
          	margin: 20px;
+			color: #fff;
          }
          #footer-p{
          	color:#fff;
@@ -261,11 +260,11 @@ img{
           font-size: 20px;
           margin: 10px;
          }
-         #footer-logos .fa{
+         #footer-logos a .fa{
          	padding: 10px;
          	color: #fff;
          }
-          #footer-logos .fa:hover{
+          #footer-logos  a .fa:hover{
           background: #fff;
           border-radius: 6px;
          	color: #000;
