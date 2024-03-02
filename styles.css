@@ -42,8 +42,11 @@
 			color: #000;
 			border-radius: 0px;
 		}
+		.sticky ul li{
+			color: #000;
+		}
 		.sticky ul li a , .sticky ul li a i{
-			color: #;
+			color: #000;
 		}
 		label::-webkit-scrollbar, .menu_bar::-webkit-scrollbar{
 			display: none;
@@ -64,12 +67,12 @@
 		}
 		.menu_bar ul li a{
 			text-decoration: none;
-			color: #fff;
+			color: #000;
 			font-size: 20px;
 			padding: 10px;
 		}
 		.fa-home{
-			color: #fff;
+			color: #000;
 			font-size: 24px;
 			line-height: 38px;
 			margin: 10px 10px 0px 10px;
