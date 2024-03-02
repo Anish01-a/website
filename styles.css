@@ -18,7 +18,7 @@
 	   }
 
 /* NAVIGATION BAR CSS */
-		nav{
+		.menu_bar{
 			height: 70px;
 			background-color: #344955;
 			width: 90%;
@@ -43,9 +43,9 @@
 			border-radius: 0px;
 		}
 		.sticky ul li a , .sticky ul li a i{
-			color: #000;
+			color: #;
 		}
-		label::-webkit-scrollbar, nav::-webkit-scrollbar{
+		label::-webkit-scrollbar, .menu_bar::-webkit-scrollbar{
 			display: none;
 		}
 		label{
@@ -53,16 +53,16 @@
 			line-height: 50px;
 			font-size: 25px;
 		}
-		nav ul{
+		.menu_bar ul{
 			float: right;
 		}
-		nav ul li{
+		.menu_bar ul li{
 			float: left;
 			line-height: 60px;			
 			margin: 0 10px;
 			padding: 0px;
 		}
-		nav ul li a{
+		.menu_bar ul li a{
 			text-decoration: none;
 			color: #fff;
 			font-size: 20px;
@@ -85,7 +85,7 @@
          	visibility: hidden;
 			color: #fff;
          }
-		nav ul li:hover{
+		.menu_bar ul li:hover{
 			background-color: #359381;
 			border-radius: 20px;
 			transition: 0.5s ease;
@@ -121,7 +121,7 @@
 				cursor: pointer;
 				visibility: visible;
          	}
-         	nav ul{
+         	.menu_bar ul{
          	  background: #202123;
               position: fixed;
               padding: 0px;
@@ -134,18 +134,18 @@
               z-index: 999;
               color: #fff;
          	}
-         	nav ul li{
+         	.menu_bar ul li{
 				display: block;
 				float: none;
 				margin-left: 60px;
 		  }
-		  nav ul li a{
+		  .menu_bar ul li a{
 			color: #fff;
 		  }
 		    #click:checked~ul{
 		    	left:0%;
 		    }
-		    nav ul li{
+		    .menu_bar ul li{
 		    	padding: 10px 10px;
 		    }
 		    li.active,li:hover{
@@ -226,6 +226,13 @@ img{
 		font-size: 28px;
 		color: #007054;
 	}
+
+/* DROPDOWN MENU CSS */
+.dropdown_menu{
+	display: block;
+	position: absolute;
+
+}
 
 /*FOOTER CONTAINER CSS */
 		 .footer_container{	
