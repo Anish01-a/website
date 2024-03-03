@@ -11,7 +11,7 @@
 	<title>Anish Neupane</title>
 </head>
 <body>
-	<div class="menu_bar">
+	<header class="menu_bar">
 		<input type="checkbox" id="click">
 		<label for="click" class="checked">
 			<i class="fa fa-bars"></i>
@@ -21,7 +21,7 @@
         	<li><a href="#home" ><i class="fa fa-home"></i></a></li>
         	<li><a href="#about">About</a></li>
         	<li>
-				<a href="#">More <i class="fas fa-caret-down"></i></a>
+				<a href="#more">More <i class="fas fa-caret-down"></i></a>
 				<div class="dropdown_menu">
 					<ul>
 						<li><a href="">Calculator</a></li>
@@ -34,7 +34,7 @@
 				</div>
 			</li>
         </ul>
-	</div>
+	</header>
 
 	<section id="home">
 		<div id="me">
@@ -44,38 +44,42 @@
 		<img src="me2.jpg" id="homeImage">
 	</section>
 
-	<div class="about" id="about">
+	<section  id="about">
 		<h1>About Me</h1>
 			<p>I am Anish Neupane. I am a begineer level front end web developer.<br>
 				I am currently studying  at Grade-9 in Computer Engineering Sector.</p>
-	</div>
-	<a href="#" class="btn"><i class="fa fa-arrow-up"></i></a>
-<!-- FOOTER CONTAINER STARTING -->
- <div class="footer_container">
-  	 <div class="footer_items grow1">
-  	 	<h5>PURPOSE OF MAKING THIS WEBSITE</h5>
-  	 	<p id="footer-p">I have created this website as my school project of Website Design's subject. This website contains things that we learned during this whole year. I am very thankful to my teacher for providing us good knowledge and different website design based skills. </p>
-  	 	<p id="footer-logos">
-  	 		<a href="https://www.instagram.com/anish.neupane0/"><i class="fa fa-instagram" style="margin-left:30px;"></i></a>
-	  	 	<a href="https://www.facebook.com/profile.php?id=100076265739840"><i class="fa fa-facebook"></i></a>
-	  	 	<a href="https://twitter.com/AnishNeupane010"><i class="fa fa-twitter"></i></a>
-  	 	</p>
-  	 </div>
-  	 <div class="footer_items grow2">
-  	 	<h5 style="text-align: left; font-family: 'Poppins', sans-serif;">My other webpages</h5>
-  	 	<ol class="webpage">
-  	 		<a href="C:\Users\dell\Desktop\Main Html\parallax website\index.html"><li>Parallax Website</li></a>
-  	 		<a href="hover-button.html"><li>Creative Hover Button</li></a>
-  	 		<a href="loading-animation.html"><li>Loading Animation</li></a>
-  	 		<a href="calculator.html"><li>Calculator</li></a>
-  	 		<a href="popup.html"><li>Pop-Up</li></a>
-  	 		<a href="validaion.html"><li>Form Validation</li></a>
-  	 		<a href="passgenerator.html"><li>Random Password Generator</li></a>
-  	 	</ol>
-  	 </div>
+	</section>
 
-  </div>
-<!--FOOTER CONTAINER ENDING -->
+<!-- FOOTER CONTAINER -->
+
+<section id="more">
+	<div class="footer_container">
+		<div class="footer_items grow1">
+			<h5>PURPOSE OF MAKING THIS WEBSITE</h5>
+			<p id="footer-p">I have created this website as my school project of Website Design's subject. This website contains things that we learned during this whole year. I am very thankful to my teacher for providing us good knowledge and different website design based skills. </p>
+			<p id="footer-logos">
+				<a href="https://www.instagram.com/anish.neupane0/"><i class="fa fa-instagram" style="margin-left:30px;"></i></a>
+				<a href="https://www.facebook.com/profile.php?id=100076265739840"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/AnishNeupane010"><i class="fa fa-twitter"></i></a>
+			</p>
+		</div>
+		<div class="footer_items grow2">
+			<h5 style="text-align: left; font-family: 'Poppins', sans-serif;">My other webpages</h5>
+			<ol class="webpage">
+				<a href="C:\Users\dell\Desktop\Main Html\parallax website\index.html"><li>Parallax Website</li></a>
+				<a href="hover-button.html"><li>Creative Hover Button</li></a>
+				<a href="loading-animation.html"><li>Loading Animation</li></a>
+				<a href="calculator.html"><li>Calculator</li></a>
+				<a href="popup.html"><li>Pop-Up</li></a>
+				<a href="validaion.html"><li>Form Validation</li></a>
+				<a href="passgenerator.html"><li>Random Password Generator</li></a>
+			</ol>
+		</div>
+	</div>
+</section>
+
+<a href="#" class="btn"><i class="fa fa-arrow-up"></i></a>
+<!--FOOTER CONTAINER  -->
 <script>
 	const toTop = document.querySelector(".btn");
 

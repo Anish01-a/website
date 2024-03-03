@@ -91,7 +91,7 @@
 		.menu_bar ul li:hover{
 			background-color: #359381;
 			border-radius: 20px;
-			transition: 0.5s ease;
+			transition: 0.3s;
 		 }
 /* GO TO TOP BUTTON  */
 		.btn{
@@ -174,11 +174,17 @@ img{
 	width: 100px;
 	text-align: center;
 }
+/* DROPDOWN MENU CSS */
+.dropdown_menu{
+	display: block;
+	position: absolute;
 
-/*SECTION CSS*/
-			section{
+}
+
+/*HOME CSS*/
+			#home{
 				background: #202123;
-				height: calc(110vh);
+				min-height: 120vh;
 				margin: 10px;
 				border-radius: 10px;
 				padding: 50px;
@@ -187,12 +193,12 @@ img{
 				justify-content: space-between;
 				align-items: center;
 				text-align: center;
-				flex-basis: 60%;
+				font-weight: 700;
 			}
-			section h1, p{
+			#home h1, p{
 				color: #E2DFD2;
 			}
-			section h1 span, p span{
+			#home h1 span, p span{
 				color: #27ae60;
 			}
 			#homeImage{
@@ -202,7 +208,7 @@ img{
 			}
 
 /* ABOUT CSS */
-	.about{
+	#about{
 		height: 110vh;
 		background-color: #191d2b;
 		position: relative;
@@ -211,7 +217,7 @@ img{
 		border-radius: 15px;
 	}
 
-	.about h1{
+	#about h1{
 		width: 100%;
 		text-align: center;
 		margin-top: 20px;
@@ -219,103 +225,97 @@ img{
 		color: #27ae60;
 	}
 
-	.about h1 span{
+	#about h1 span{
 		color: #27ae60;
 	}
 
-	.about p{
+	#about p{
 		margin-left: 10px;
 		padding: 20px;
 		font-size: 28px;
 		color: #007054;
 	}
 
-/* DROPDOWN MENU CSS */
-.dropdown_menu{
-	display: block;
-	position: absolute;
+/* MORE & FOOTER CONTAINER CSS*/
 
-}
+	.footer_container{	
+		background: #24272e;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.footer_items{
+		column-gap: 20px;
+		width: 200px;
+	}
+	.grow1{
+		flex-grow: 2;
+	}
+	.grow2{
+		align-items: center;
+		flex-grow: 1;
+	}
+	.footer_items h5{
+		background: none;
+		margin: 20px;
+	color: #fff;
+	}
+	#footer-p{
+		color:#fff;
+		font-size: 20px;
+		margin-left: 30px;
+	}
+	.footer_items p i{
+	color: #fff;
+	font-size: 20px;
+	margin: 10px;
+	}
+	#footer-logos a .fa{
+		padding: 10px;
+		color: #fff;
+	}
+	#footer-logos  a .fa:hover{
+	background: #fff;
+	border-radius: 6px;
+		color: #000;
+		cursor: pointer;
+		transition: background 0.5s ease;
+	}
+	.webpage li{
+		font-size: 20px;
+	width: 60%;
+		color: #fff;
+		cursor: pointer;
+		position: relative;
+		padding-bottom: 10px;
+	}
+	.webpage li::before{
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 20%;
+		height: 2px;
+		transition: width 0.5s ease-out;
+	}
+	.webpage li:hover::before{
+		width: 80%;
+		left: 0;
+		right: auto;
+		background-color: rgb(0, 255, 0);
+	}
+	.webpage li::after{
+	width: 20%;
+	transition: width 0.3s ease;
+	content: '';
 
-/*FOOTER CONTAINER CSS */
-		 .footer_container{	
-         	background: #24272e;
-         	display: flex;
-         	align-items: center;
-         	justify-content: space-around;
-         }
-         .footer_items{
-         	column-gap: 20px;
-         	width: 200px;
-         }
-         .grow1{
-         	flex-grow: 2;
-         }
-         .grow2{
-         	align-items: center;
-         	flex-grow: 1;
-         }
-         .footer_items h5{
-         	background: none;
-         	margin: 20px;
-			color: #fff;
-         }
-         #footer-p{
-         	color:#fff;
-         	font-size: 20px;
-         	margin-left: 30px;
-         }
-         .footer_items p i{
-          color: #fff;
-          font-size: 20px;
-          margin: 10px;
-         }
-         #footer-logos a .fa{
-         	padding: 10px;
-         	color: #fff;
-         }
-          #footer-logos  a .fa:hover{
-          background: #fff;
-          border-radius: 6px;
-         	color: #000;
-         	cursor: pointer;
-         	transition: background 0.5s ease;
-         }
-         .webpage li{
-         	font-size: 20px;
-			width: 60%;
-         	color: #fff;
-         	cursor: pointer;
-         	position: relative;
-         	padding-bottom: 10px;
-         }
-         .webpage li::before{
-         	content: "";
-         	position: absolute;
-         	left: 0;
-         	bottom: 0;
-         	width: 20%;
-         	height: 2px;
-         	transition: width 0.5s ease-out;
-         }
-         .webpage li:hover::before{
-         	width: 80%;
-         	left: 0;
-         	right: auto;
-         	background-color: rgb(0, 255, 0);
-         }
-        .webpage li::after{
-        	width: 20%;
-        	transition: width 0.3s ease;
-        	content: '';
-
-        }
-        .webpage li:hover{
-        	border-bottom: none;
-        }
-	     	h5{
-	     		padding-left: 30px;
-	     		font-family: 'Poppins', sans-serif;
-	     		font-size: 23px;
-	     	}
+	}
+	.webpage li:hover{
+	border-bottom: none;
+	}
+		h5{
+			padding-left: 30px;
+			font-family: 'Poppins', sans-serif;
+			font-size: 23px;
+		}
 
