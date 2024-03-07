@@ -30,6 +30,7 @@
 			transform: scale(1,1);
 			overflow-y: hidden;
 			padding-top: 5px;
+			position: relative;
 		}
 		.sticky{
 			position: fixed;
@@ -38,7 +39,6 @@
 			width: 100%;
 			margin-top: 0px;
 			z-index: 998;
-			background-color: #fff;
 			color: #000;
 			border-radius: 0px;
 		}
@@ -175,10 +175,24 @@ img{
 	text-align: center;
 }
 /* DROPDOWN MENU CSS */
-.dropdown_menu{
+ .dropdown_menu{
 	display: block;
 	position: absolute;
-
+	right: 20px;
+	width: 320px;
+	height: 250px;
+	top: 100%;
+	background-color: #344955;
+	z-index: 999;
+}
+#more:hover .dropdown_menu ul{
+	display: block;
+	margin: 10px;
+}
+#more:hover .dropdown_menu ul li{
+	width: 150px;
+	padding: 10px;
+	color: #000;
 }
 
 /*HOME CSS*/
