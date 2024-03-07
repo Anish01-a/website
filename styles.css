@@ -175,7 +175,7 @@ img{
 	text-align: center;
 }
 /* DROPDOWN MENU CSS */
- .dropdown_menu{
+ /* .dropdown_menu{
 	display: block;
 	position: absolute;
 	right: 20px;
@@ -193,7 +193,7 @@ img{
 	width: 150px;
 	padding: 10px;
 	color: #000;
-}
+} */
 
 /*HOME CSS*/
 			#home{
@@ -230,7 +230,11 @@ img{
 		margin: 10px;
 		border-radius: 15px;
 	}
-
+	#about div{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
 	#about h1{
 		width: 100%;
 		text-align: center;
