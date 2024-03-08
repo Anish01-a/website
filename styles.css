@@ -209,10 +209,10 @@ img{
 		padding-top: 50px;
 		margin: 10px;
 		border-radius: 15px;
+		overflow-y: hidden;
 	}
 	#about div{
 		display: flex;
-		justify-content: space-around;
 		align-items: center;
 	}
 	#about h1{
@@ -228,10 +228,11 @@ img{
 	}
 
 	#about p{
-		margin-left: 10px;
+		margin: 70px 30px;
 		padding: 20px;
 		font-size: 28px;
 		color: whitesmoke;
+		text-align: center;
 	}
 
 /* MORE & FOOTER CONTAINER CSS*/

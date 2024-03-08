@@ -34,6 +34,7 @@
         margin: 40px auto;
         width: 70%;
         background-color: #358391;
+        opacity: 0.6;
         height: calc(60vh);
         border-radius: 20px;
         padding: 20px;
@@ -42,12 +43,13 @@
         justify-content: space-around;
     }
     h3{
-        color: #fff;
+        color: white;
         font-size: 34px;
     }
     p{
         font-size: 28px;
         margin-top: 10px;
+        color: whitesmoke;
     }
     img{
         position: absolute;
@@ -59,20 +61,30 @@
     .contact-left i{
         margin-right: 10px;
     }
+    .logos{
+        position: absolute;
+        bottom:20px;
+    }
     .logos .fa{
         font-size: 20px;
-        width: auto;
+        width: 40px;
         padding: 10px;
         text-align: center;
         height: auto;
         border-radius: 50%;
-        background-color: #fff;
-        color: #000;
+        background-color: #333;
+        color: #fff;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        box-shadow: 3px 0 10px #333, 3px 3px -10px #333;
     }
-    .logos{
-        position: absolute;
-        bottom:20px;
-        width: 100px;
+    .logos .fa:hover{
+        color: #fff;
+        transform: translateY(-8px);
+        background: #358391;
+    }
+    .logos a{
+        margin-left: 70px;
     }
 </style>
 <body>
@@ -88,13 +100,17 @@
             </div>
             <div class="contact-right">
                 <p>neupaneanish010@gmail.com</p>
-                <p>+977 9817951302</p>
+                <p>+977 9817*****2</p>
                 <p>Gauradaha-2, Jhapa</p>
                 <p>Class - 8(B.L.E)</p>
             </div>
         </div>
         <p class="logos">
-            <i class="fa fa-instagram"></i>
+            <a href="https://www.facebook.com/profile.php?id=100076265739840"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/anish.neupane0/"><i class="fa fa-instagram"></i></a>
+            <a href="https://github.com/Anish01-a"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/anish-neupane-a28414281/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/AnishNeupane010"><i class="fa fa-twitter"></i></a>
         </p>
     </div>
 </body>
