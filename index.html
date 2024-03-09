@@ -25,14 +25,16 @@
         </ul>
 	</header>
 
+<!-- HOME PAGE -->
 	<section id="home">
 		<div id="me">
-			<h1><span>Hello!</span><br>It me <span>Anish Neupane.</span></h1>
+		<h1><span>Hello!</span><br>It me <span>Anish Neupane.</span></h1>
 			<p>A begineer level<br><span>Front-end web developer</span><br> from Nepal. </p>
 		</div>	
 		<img src="me2.jpg" id="homeImage">
 	</section>
 
+<!-- ABOUT PAGE -->
 	<section  id="about">
 		<h1>About Me</h1>
 		<div >
@@ -48,9 +50,21 @@
 		</div>
 	</section>
 
+<!-- SLIDER PAGE -->
+	<section id="more">
+		<h1>My Other Webpages</h1>
+			<div class="wrapper">
+				<img class="slide" src="hover.png">
+				<img class="slide" src="form.png">
+				<img class="slide" src="popup.png">
+				<img class="slide" src="animate.png">
+				<img class="slide" src="parallax.png">
+				<img class="slide" src="calculator.png">
+			</div>
+	</section>
 <!-- FOOTER CONTAINER -->
 
-<section id="more">
+<section>
 	<div class="footer_container">
 		<div class="footer_items grow1">
 			<h5>PURPOSE OF MAKING THIS WEBSITE</h5>
@@ -71,7 +85,7 @@
 				<a href="loading-animation.html"><li>Loading Animation</li></a>
 				<a href="calculator.html"><li>Calculator</li></a>
 				<a href="popup.html"><li>Pop-Up</li></a>
-				<a href="validaion.html"><li>Form Validation</li></a>
+				<a href="validation.html"><li>Form Validation</li></a>
 				<a href="passgenerator.html"><li>Random Password Generator</li></a>
 			</ol>
 		</div>
@@ -81,6 +95,21 @@
 <a href="#" class="btn"><i class="fa fa-arrow-up"></i></a>
 <!--FOOTER CONTAINER  -->
 <script>
+	const slides = document.querySelectorAll(".slide");
+	var counter = 0;
+
+	slides.forEach(
+		(slide, index) => {
+			slide.style.left = "${index * 100}%";
+		}
+	)
+	const slideImage = () => {
+		slides.forEach(
+			(slide) -> {
+				slide.style.transform = 'translateX(=${counter * 100}%)';
+			}
+		)
+	}
 	const toTop = document.querySelector(".btn");
 
 	window.addEventListener("scroll", () => {
@@ -96,6 +125,5 @@
         nav.classList.toggle("sticky", window.scrollY > 5);
     });
 </script>
-
 </body>
 </html>

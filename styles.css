@@ -235,7 +235,39 @@ img{
 		text-align: center;
 	}
 
-/* MORE & FOOTER CONTAINER CSS*/
+/* SLIDER CSS */
+	#more{
+		height: 110vh;
+		background-color: #202123;
+		position: relative;
+		padding-top: 50px;
+		margin: 10px;
+		border-radius: 15px;
+	}
+	.wrapper{
+		height: 80%;
+		width: 80%;
+		border: 2px solid #fff;
+		border-radius: 15px;
+		margin: auto;
+		display: flex;
+		animation: slide 14s infinite;
+	}
+	.slide{
+		margin: 5px;
+		width: 79%;
+		height: 72%;
+		position: absolute;
+		border-radius: 5px;
+		transition: 1s ;
+	}
+	#more h1{
+		font-size: 40px;
+		margin-top: 20px;
+		text-align: center;
+		color: #27ae60;
+	}
+/* FOOTER CONTAINER CSS*/
 
 	.footer_container{	
 		background: #24272e;
