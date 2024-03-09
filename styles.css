@@ -260,12 +260,25 @@ img{
 		position: absolute;
 		border-radius: 5px;
 		transition: 1s ;
+		cursor: default;
 	}
 	#more h1{
 		font-size: 40px;
 		margin-top: 20px;
 		text-align: center;
 		color: #27ae60;
+	}
+	#more .buttons{
+		text-align: center;
+		display: block;
+		margin: auto;
+	}
+	#more button{
+		border-radius: 50%;
+		margin-top: 10px;
+		padding: 10px;
+		cursor: pointer;
+		text-align: center;
 	}
 /* FOOTER CONTAINER CSS*/
 
