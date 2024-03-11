@@ -66,11 +66,11 @@
 				box-shadow: none;
 				color: #fff;
 				text-align: right;
-				background: ;
+				background: #3a445e;
 			}
 
 			.container form .operator{
-				color: #08e8de;
+				color: #27ae60;
 			}
 			/*CALCULATOR CSS END*/
 			/*LOGO*/
@@ -89,12 +89,12 @@
 		<div class="calculator">
 			<form>
 				<div>
-					<input type="text" name="display" id="display">
+					<input type="text" name="display" id="display" readonly>
 				</div>
 				<div class="row">
 					<input type="button" value="AC" onclick="display.value = '' " class="operator">
 					<input type="button" value="DEL" onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
-					<input type="button" value="%" onclick="display.value += '.' " class="operator">
+					<input type="button" value="." onclick="display.value += '.' " class="operator">
 					<input type="button" value="/" onclick="display.value += '/' " class="operator"> 
 				</div>
 				<div>
