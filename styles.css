@@ -118,7 +118,7 @@
 			opacity: 1;
 		}
 /* RESPONSIVE CSS */
- @media(max-width:700px){
+ @media only screen and (max-width:700px){
          	.checked{
 				color: #000;
 				cursor: pointer;
@@ -131,7 +131,7 @@
               margin: 0px;
               float:left;
               top: 60px;
-			  height: 100px;
+			  height: auto;
               left:-110%;
               width: 100%;
               z-index: 999;
@@ -140,16 +140,25 @@
          	.menu_bar ul li{
 				display: block;
 				float: none;
-				margin-left: 60px;
+				margin-left: 0;
+				line-height: 26px;
+		  }
+		  .menu_bar ul li a i{
+			color: #fff;
 		  }
 		  .menu_bar ul li a{
 			color: #fff;
+			font-size: 18px;
 		  }
 		    #click:checked~ul{
 		    	left:0%;
 		    }
+			#click:checked~.menu_bar{
+				height: 287px;
+			}
 		    .menu_bar ul li{
-		    	padding: 10px 10px;
+		    	padding: 10px 0px;
+				width: 100%;
 		    }
 		    li.active,li:hover{
          	background: transparent;
@@ -160,20 +169,28 @@
             h2{
              font-size: 25px;  
             }
-        .webpage li{
+        .webpage a li{
 				background:none;       	
-				font-size: 15px;
+				font-size: 16px;
         }
-        .webpage li:hover{
+        .webpage a li:hover{
         	background: none;
         }
-        }
-img{
-	cursor: pointer;
-	height: 60px;
-	width: 100px;
-	text-align: center;
-}
+		.btn{
+			width: 30px;
+			font-size: 20px;
+			height: 30px;
+		}
+		#homeImage{
+			
+		}
+    }
+	img{
+		cursor: pointer;
+		height: 60px;
+		width: 100px;
+		text-align: center;
+	}
 
 /*HOME CSS*/
 			#home{
@@ -227,7 +244,7 @@ img{
 		color: #27ae60;
 	}
 
-	#about p{
+	#about div p{
 		margin: 70px 30px;
 		padding: 20px;
 		font-size: 28px;
