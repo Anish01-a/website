@@ -9,7 +9,7 @@
 body{
     background: #f9f9f9;  
     min-height: 100vh;
-    overflow-x: hidden;  
+    overflow-x: hidden;
 }
 
 header{
@@ -25,7 +25,9 @@ header{
 }
 
 .logo{
-    height: 60px;
+    height: 70px;
+    width: 100px;
+    border-radius: 10px;
     margin-right: 330px;
 }
 
@@ -50,6 +52,7 @@ header{
     align-items: center;
     display: flex;
     height: 100vh;
+    overflow-y: hidden;
 }
 
 #text{
@@ -79,14 +82,14 @@ header{
 
 .sec{
     position:relative;
-    background: #003329;
+    background: #212123;
     padding: 100px;
     height: 150vh;
 }
 
 .sec h2{
     font-size: 48px;
-    color: #fff;
+    color: #27ae60;
     margin-bottom:20px;
 }
 
