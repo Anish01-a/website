@@ -113,6 +113,10 @@
 			pointer-events: none;
 			transition: all .4s;
 		}
+		.btn:hover{
+			background-color: #27ae60;
+			color: #fff;
+		}
 		.btn.top{
 			bottom: 32px;
 			pointer-events: auto;
